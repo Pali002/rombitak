@@ -13,6 +13,6 @@ package views;
 public class CircuitPanel extends InputPanel {
 
     public CircuitPanel() {
-        this.setText("Kerület");
+        this.setText("Kerület: ");
     }
 }

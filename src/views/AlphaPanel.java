@@ -15,7 +15,7 @@ public class AlphaPanel extends InputPanel
 
     public AlphaPanel() 
     {
-        this.setText("Alfaszög");
+        this.setText("Alfaszög:");
     }
 
 }

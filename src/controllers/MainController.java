@@ -30,22 +30,31 @@ public class MainController {
     }
 
     public void onClickCaclButton() {
+        this.calcVolume();
+        this.calcCircuit();
+    }
+
+    public void onClickAboutButton() {
+        String aboutString = "Rombitak\nVerzió: 0.1\nSzoft-II-N, 2022";
+        JOptionPane.showMessageDialog(mainWindow, aboutString);
+    }
+
+    public void calcVolume() {
         String asiteStr = this.mainWindow.asitePanel.getValue();
         String alphaStr = this.mainWindow.alphaPanel.getValue();
-
         double alpha = Double.parseDouble(alphaStr);
         double asite = Double.parseDouble(asiteStr);
-
-        Double circuit = 4 * asite;
-        this.mainWindow.circuitPanel.setValue(circuit.toString());
 
         Double radian = alpha * Math.PI/180;
         Double volume =  Math.pow(asite, 2) * Math.sin(radian);
         this.mainWindow.volumePanel.setValue(volume.toString());
     }
 
-    public void onClickAboutButton() {
-        String aboutString = "Rombitak\nVerzió: 0.1\nSzoft-II-N, 2022";
-        JOptionPane.showMessageDialog(mainWindow, aboutString);
+    public void calcCircuit() {
+        String asiteStr = this.mainWindow.asitePanel.getValue();
+        double asite = Double.parseDouble(asiteStr);
+
+        Double circuit = 4 * asite;
+        this.mainWindow.circuitPanel.setValue(circuit.toString());
     }
 }
