@@ -1,5 +1,5 @@
 /*
-* File: App.java
+* File: MainController.java
 * Author: Zentai Pál
 * Copyright: 2022, Zentai Pál
 * Group: Szoft-II-N
@@ -8,8 +8,8 @@
 * Licenc: GNU GPL
 */
 
-public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-    }
+package controllers;
+
+public class MainController {
+    
 }
