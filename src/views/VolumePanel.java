@@ -13,6 +13,6 @@ package views;
 public class VolumePanel extends InputPanel {
     
     public VolumePanel() {
-        this.label.setText("Terület");
+        this.setText("Terület");
     }
 }

@@ -10,6 +10,23 @@
 
 package views;
 
-public class ButtonsPanel {
+import javax.swing.JButton;
+import javax.swing.JPanel;
+
+public class ButtonsPanel extends JPanel {
     
+    public JButton calcButton;
+    public JButton aboutButton;
+
+    public ButtonsPanel() {
+
+        this.calcButton = new JButton("Számít");
+        this.aboutButton = new JButton("Névjegy");
+        this.addComponent();
+    }
+
+    public void addComponent() {
+        this.add(calcButton);
+        this.add(aboutButton);
+    }
 }

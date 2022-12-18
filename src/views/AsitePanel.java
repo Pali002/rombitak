@@ -13,6 +13,6 @@ package views;
 public class AsitePanel extends InputPanel {
     
     public AsitePanel() {
-        this.label.setText("A oldal");
+        this.setText("A oldal");
     }
 }
