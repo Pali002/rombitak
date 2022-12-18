@@ -10,6 +10,12 @@
 
 package views;
 
-public class AlphaPanel {
-    
+public class AlphaPanel extends InputPanel
+{
+
+    public AlphaPanel() 
+    {
+        this.label.setText("Alfaszög");
+    }
+
 }

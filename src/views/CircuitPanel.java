@@ -10,6 +10,9 @@
 
 package views;
 
-public class CircuitPanel {
-    
+public class CircuitPanel extends InputPanel {
+
+    public CircuitPanel() {
+        this.setText("Kerület");
+    }
 }

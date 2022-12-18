@@ -10,6 +10,9 @@
 
 package views;
 
-public class VolumePanel {
+public class VolumePanel extends InputPanel {
     
+    public VolumePanel() {
+        this.label.setText("Terület");
+    }
 }
